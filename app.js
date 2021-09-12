@@ -5,13 +5,6 @@ const randomUserAgent = require('random-user-agent');
 
 const CronJob = require('cron').CronJob;
 
-Array.prototype.randomFB = function () {
-	return this[Math.floor(Math.random() * this.length)];
-}
-var app = require('express')()
-//const jsonString = fs.readFileSync('directORsocial.json');
-//const BsocialLink = JSON.parse(jsonString);
-//const socialLink = BsocialLink.randomFB();
 
 const job = new CronJob('*/1 * * * *', function() {
 
@@ -237,7 +230,3 @@ for (var i = 0; i < args.windows; i++) {
 
 }, null, true, 'Asia/Bangkok');
 job.start();
-
-//var listener = app.listen(8080, function(){
- //   console.log('Listening on port ' + listener.address().port); //Listening on port 8888
-//});
