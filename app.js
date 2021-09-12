@@ -27,7 +27,7 @@ let args = minimist(process.argv.slice(2), {
 		pass: '', // Proxy pass
 		windows: '10', // windows to be opened
 		time : 'random', // Total time of the section in minutes
-		referrals : 'yes'
+		referrals : ''
 	}
 });
 
